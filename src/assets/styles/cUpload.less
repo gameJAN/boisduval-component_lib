@@ -1,0 +1,68 @@
+.c-upload {
+  position: relative;
+  .uploader {
+    width: 80px;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .upload-list {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    margin-right: 4px;
+    display: inline-block;
+    vertical-align: bottom;
+    &:hover {
+      .upload-cover {
+        display: block;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .remove {
+      position: absolute;
+      right: -5px;
+      top: -5px;
+      color: red;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+  .upload-btn-add {
+    width: 78px;
+    height: 78px;
+    line-height: 78px;
+    font-size: 35px;
+  }
+  .upload-cover {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    i {
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      margin: 0 2px;
+      line-height: 80px;
+    }
+  }
+  .down {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+}
